@@ -3,6 +3,11 @@ import { Router } from "express";
 
 const router = Router();
 
+router.get('/', async (req: Request, res: Response) => {
+    res.json({message:"start application"}
+)
+ })
+
 router.post('/numbers', (req: Request, res: Response) => {
 
     let number1: number = req.body.num1
